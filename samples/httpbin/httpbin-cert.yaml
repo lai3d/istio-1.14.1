@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cert-httpbin
+  namespace: istio-system
+spec:
+  commonName: "httpbin.bet777.win"
+  dnsNames:
+  - "httpbin.bet777.win"
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-prod
+  secretName: cert-httpbin

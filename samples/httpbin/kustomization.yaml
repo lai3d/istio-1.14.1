@@ -1,0 +1,5 @@
+resources:
+- httpbin-namespace.yaml
+- httpbin-cert.yaml
+- httpbin.yaml
+- httpbin-gateway.yaml
